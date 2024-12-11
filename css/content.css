@@ -6,46 +6,17 @@ body {
     background-color: #212121;
 }
 
-.stroka{
-    background-color: white;
-    height: 5%;
-    width: 100%;
-    overflow-x: hidden;
-
-}
-
-.stroka p{
-    font-family: "Montserrat";
-    font-size: 100px;
-    font-style: normal;
-    font-weight: 900;
-    text-align:center;
-    color: #212121;
-    text-transform: uppercase;
-    animation: text 10s infinite linear;
-    padding-left: 100%;
-    white-space: nowrap;
-  }
-  @keyframes text {
-    0%{
-      transform: translate(0, 0);
-    }
-    100%{
-      transform: translate(-160%, 0);
-    }
-  }
-
 .first{
     width: 100%;
     height: 25vw;
     display: flex;
     flex-direction: row;
     justify-content: start;
-    align-items: center;
+    align-items: start;
 }
 
 .square{
-    width: 25%;
+    width: 25vw;
     height: 25vw;
     overflow: hidden;
     position: relative;
@@ -57,6 +28,8 @@ body {
 }
 
 .eye:hover{background-image: url("../img/eye2.svg");}
+
+
 
 .smile{
     background-image: url("../img/smile1.svg");
@@ -78,3 +51,679 @@ body {
 }
 
 .scream:hover{background-image: url("../img/scream2.svg");}
+
+.circle1 {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    background-color: #FF3E3E;
+    border: 2vw white;
+    position: absolute;
+    margin-top: 20vw;
+    margin-left: 0.3vw;
+    animation: ball1 2s linear infinite; 
+    animation-direction: alternate-reverse;
+}
+
+@keyframes ball1{
+    0%{top: -100%; left: 0%}
+    100%{top: 0%; left: 0%}
+}
+
+.circle2 {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    background-color: #D4A0B9;
+    border: 2vw white;
+    position: absolute;
+    margin-top: 16vw;
+    margin-left: 4vw;
+    animation: ball2 1s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes ball2{
+    0%{top: -100%; left: 0%}
+    100%{top: 0%; left: 0%}
+}
+
+.circle3 {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    background-color: #FF5C00;
+    border: 2vw white;
+    position: absolute;
+    margin-top: 20vw;
+    margin-left: 5vw;
+    animation: ball3 1.5s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes ball3{
+    0%{top: -100%; left: 0%}
+    100%{top: 0%; left: 0%}
+}
+
+.circle4 {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    background-color: #7C7BC8;
+    position: absolute;
+    margin-top: 15vw;
+    margin-left: 8vw;
+    animation: ball4 1.5s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes ball4{
+    0%{top: -100%; left: 0%}
+    100%{top: 0%; left: 0%}  
+}
+
+.circle5 {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    background-color: #DAC3A1;
+    position: absolute;
+    margin-top: 19.5vw;
+    margin-left: 9.5vw;
+    animation: ball5 2s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes ball5{
+    0%{top: -100%; left: 0%}
+    100%{top: 0%; left: 0%}
+}
+
+.circle6 {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    background-color: #A9A9A9;
+    position: absolute;
+    margin-top: 17vw;
+    margin-left: 12vw;
+    animation: ball6 1s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes ball6{
+    0%{top: -100%; left: 0%}
+    100%{top: 0%; left: 0%}
+}
+
+.circle7 {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    background-color: #FF427A;
+    position: absolute;
+    margin-top: 20vw;
+    margin-left: 14vw;
+    animation: ball7 1.75s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes ball7{
+    0%{top: -100%; left: 0%}
+    100%{top: 0%; left: 0%}
+}
+
+.circle8 {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    background-color: #909747;
+    position: absolute;
+    margin-top: 16vw;
+    margin-left: 16vw;
+    animation: ball8 1.5s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes ball8{
+    0%{top: -100%; left: 0%}
+    100%{top: 0%; left: 0%}
+}
+
+.circle9 {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    background-color: #D4EDCB;
+    position: absolute;
+    margin-top: 20.5vw;
+    margin-left: 18vw;
+    animation: ball9 2s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes ball9{
+    0%{top: -100%; left: 0%}
+    100%{top: 0%; left: 0%}
+}
+
+.circle10 {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    background-color: #FFC556;
+    position: absolute;
+    margin-top: 17vw;
+    margin-left: 20.5vw;
+    animation: ball10 1.75s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes ball10{
+    0%{top: -100%; left: 0%}
+    100%{top: 0%; left: 0%}
+}
+
+.circle11 {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    background-color: #9AF2F2;
+    position: absolute;
+    margin-top: 13vw;
+    margin-left: 19vw;
+    animation: ball11 1.75s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes ball11{
+    0%{top: -100%; left: 0%}
+    100%{top: 0%; left: 0%}
+}
+
+.anim4{
+    background-image: url("../img/ellipse.svg");
+    background-size: 99%;
+}
+.circle12{
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    background-color: #EBA6BB;
+    position: absolute;
+    margin-top: 13vw;
+    margin-left: 11.5vw;
+    animation: ball12 1.5s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes ball12{
+    0%{top: -100%; left: 0%}
+    100%{top: 0%; left: 0%}
+}
+
+.anim2:hover{
+    background-image: url("../img/anim2.svg");
+    background-size: contain;
+}
+
+.aball1{
+    width: 1.9vw;
+    height: 1.9vw;
+    border-radius: 50%;
+    background-color: #FFC556;
+    position: absolute;
+    animation: aball1 2s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes aball1{
+    0%{top: -10%; left: 46%}
+    100%{top: 34%; left: 46%}
+}
+
+.aball2{
+    width: 1.9vw;
+    height: 1.9vw;
+    border-radius: 50%;
+    background-color: #A9A9A9;
+    position: absolute;
+    animation: aball2 2s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes aball2{
+    0%{top: 110%; left: 46%}
+    100%{top: 58%; left: 46%}
+}
+
+.aball3{
+    width: 1.9vw;
+    height: 1.9vw;
+    border-radius: 50%;
+    background-color: #7C7BC8;
+    position: absolute;
+    animation: aball3 2s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes aball3{
+    0%{top: 46%; left: -10%}
+    100%{top: 46%; left: 34%}
+}
+
+.aball4{
+    width: 1.9vw;
+    height: 1.9vw;
+    border-radius: 50%;
+    background-color: #FF5C00;
+    position: absolute;
+    animation: aball4 2s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes aball4{
+    0%{top: 46%; left: 110%}
+    100%{top: 46%; left: 58%}
+}
+
+.aball5{
+    width: 1.9vw;
+    height: 1.9vw;
+    border-radius: 50%;
+    background-color: #9AF2F2;
+    position: absolute;
+    animation: aball5 2s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes aball5{
+    0%{top: -10%; left: 110%}
+    100%{top: 37%; left: 55%}
+}
+
+.aball6{
+    width: 1.9vw;
+    height: 1.9vw;
+    border-radius: 50%;
+    background-color: #FF3E3E;
+    position: absolute;
+    animation: aball6 2s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes aball6{
+    0%{top: -10%; left: -10%}
+    100%{top: 37%; left: 37%}
+}
+
+.aball7{
+    width: 1.9vw;
+    height: 1.9vw;
+    border-radius: 50%;
+    background-color: #909747;
+    position: absolute;
+    animation: aball7 2s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes aball7{
+    0%{top: 110%; left: -10%}
+    100%{top: 55%; left: 37%}
+}
+
+.aball8{
+    width: 1.9vw;
+    height: 1.9vw;
+    border-radius: 50%;
+    background-color: #FF427A;
+    position: absolute;
+    animation: aball8 2s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes aball8{
+    0%{top: 110%; left: 110%}
+    100%{top: 55%; left: 55%}
+}
+
+.aball9{
+    width: 1.9vw;
+    height: 1.9vw;
+    border-radius: 50%;
+    background-color: #DAC3A1;
+    position: absolute;
+    animation: aball9 2s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes aball9{
+    0%{top: 45%; left: 110%}
+    100%{top: 45%; left: 70%}
+}
+
+.aball10{
+    width: 1.9vw;
+    height: 1.9vw;
+    border-radius: 50%;
+    background-color: #D4EDCB;
+    position: absolute;
+    animation: aball10 2s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes aball10{
+    0%{top: -10%; left: 100%}
+    100%{top: 28%; left: 61%}
+}
+
+.aball11{
+    width: 1.9vw;
+    height: 1.9vw;
+    border-radius: 50%;
+    background-color: #D85E76;
+    position: absolute;
+    animation: aball11 2s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes aball11{
+    0%{top: 0%; left: -10%}
+    100%{top: 39%; left: 28%}
+}
+
+.aball12{
+    width: 1.9vw;
+    height: 1.9vw;
+    border-radius: 50%;
+    background-color: #FF8C72;
+    position: absolute;
+    animation: aball12 2s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes aball12{
+    0%{top: -10%; left: 10%}
+    100%{top: 14%; left: 27%}
+}
+
+.aball13{
+    width: 1.9vw;
+    height: 1.9vw;
+    border-radius: 50%;
+    background-color: #B3B694;
+    position: absolute;
+    animation: aball13 2s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes aball13{
+    0%{top: 110%; left: 10%}
+    100%{top: 78%; left: 27%}
+}
+
+.aball14{
+    width: 1.9vw;
+    height: 1.9vw;
+    border-radius: 50%;
+    background-color: #D4A0B9;
+    position: absolute;
+    animation: aball14 2s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes aball14{
+    0%{top: 18%; left: -8%}
+    100%{top: 28%; left: 2%}
+}
+
+.aball15{
+    width: 1.9vw;
+    height: 1.9vw;
+    border-radius: 50%;
+    background-color: #DDD7C1;
+    position: absolute;
+    animation: aball15 2s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes aball15{
+    0%{top: 10%; left: 110%}
+    100%{top: 21%; left: 83%}
+}
+
+.aball16{
+    width: 1.9vw;
+    height: 1.9vw;
+    border-radius: 50%;
+    background-color: #FF7874;
+    position: absolute;
+    animation: aball16 2s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes aball16{
+    0%{top: 76%; left: 110%}
+    100%{top: 66%; left: 76%}
+}
+
+.aball17{
+    width: 1.9vw;
+    height: 1.9vw;
+    border-radius: 50%;
+    background-color: #EBA6BB;
+    position: absolute;
+    animation: aball17 2s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes aball17{
+    0%{top: 100%; left: 80%}
+    100%{top: 87%; left: 63%}
+}
+
+.circle {
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    background-color: #B3B3CF;
+    position: absolute;
+    animation: ball 5s linear infinite, changeColor 5s infinite;
+    animation-play-state: running;
+}
+
+    @keyframes ball{
+        0%{top: 50%; left: 2%}
+        30%{top: 6%; left: 25%}
+        50%{top: 6%; left: 65%}
+        70%{top: 80%; left: 75%}
+        100%{top: 50%; left: 2%}
+    }
+
+    @keyframes changeColor {
+        0% {background-color:  #B3B3CF;}
+        30% {background-color:  #FFAA91;}
+        50% {background-color:  #D7F5E1;}
+        70% {background-color:  #FD91B1;}
+        100% {background-color: #C5C7B1;}
+      }
+
+      .circle:hover{animation-play-state: paused;}
+
+.anim3{
+    background-image: url("../img/anim3.svg");
+    background-size: 99%;
+}
+
+
+.bball1{
+    width: 1.9vw;
+    height: 1.9vw;
+    border-radius: 50%;
+    background-color: #FFC556;
+    position: absolute;
+    top: 45%; left: 42%;
+    animation: bball1 2s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes bball1{
+    0%{transform: scale(1)}
+    100%{transform: scale(20)}
+}
+
+.bball2{
+    width: 1.9vw;
+    height: 1.9vw;
+    border-radius: 50%;
+    background-color: #9AF2F2;
+    position: absolute;
+    top: 38%; left: 37%;
+    animation: bball2 2s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes bball2{
+    0%{transform: scale(1)}
+    100%{transform: scale(18)}
+}
+
+.bball3{
+    width: 1.9vw;
+    height: 1.9vw;
+    border-radius: 50%;
+    background-color: #FF5C00;
+    position: absolute;
+    top: 35%; left: 46%;
+    animation: bball3 2s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes bball3{
+    0%{transform: scale(1)}
+    100%{transform: scale(16)}
+}
+
+.bball4{
+    width: 1.9vw;
+    height: 1.9vw;
+    border-radius: 50%;
+    background-color: #FF427A;
+    position: absolute;
+    top: 40%; left: 54%;
+    animation: bball4 2s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes bball4{
+    0%{transform: scale(1)}
+    100%{transform: scale(14)}
+}
+
+.bball5{
+    width: 1.9vw;
+    height: 1.9vw;
+    border-radius: 50%;
+    background-color: #A9A9A9;
+    position: absolute;
+    top: 49%; left: 53%;
+    animation: bball5 2s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes bball5{
+    0%{transform: scale(1)}
+    100%{transform: scale(12)}
+}
+
+.bball6{
+    width: 1.9vw;
+    height: 1.9vw;
+    border-radius: 50%;
+    background-color: #909747;
+    position: absolute;
+    top: 56%; left: 48%;
+    animation: bball6 2s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes bball6{
+    0%{transform: scale(1)}
+    100%{transform: scale(10)}
+}
+
+.bball7{
+    width: 1.9vw;
+    height: 1.9vw;
+    border-radius: 50%;
+    background-color: #7C7BC8;
+    position: absolute;
+    top: 57%; left: 39%;
+    animation: bball7 2s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes bball7{
+    0%{transform: scale(1)}
+    100%{transform: scale(8)}
+}
+
+.bball8{
+    width: 1.9vw;
+    height: 1.9vw;
+    border-radius: 50%;
+    background-color: #FF3E3E;
+    position: absolute;
+    top: 53%; left: 30%;
+    animation: bball8 2s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes bball8{
+    0%{transform: scale(1)}
+    100%{transform: scale(6)}
+}
+
+.second{
+    width: 100%;
+    height: 25vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+}
+
+  .running{
+    background: white;
+    color: #212121;
+    font-family: "Montserrat";
+    font-weight: 900;
+    font-size: 6.3vw;
+    width: 100%;
+    height: 10%;
+    overflow: hidden;
+    text-transform: uppercase;
+  }
+        
+.items{
+    display: flex;
+    width: fit-content;
+    animation: ticker 10s linear infinite;
+}
+        
+.item{
+    margin-left: 2vw;
+}
+
+@keyframes ticker {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  .anim4{
+    background-image: url("../img/ellipse.svg");
+    background-size: 99%;
+}
+
+
