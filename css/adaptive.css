@@ -137,4 +137,16 @@
         top: 0%;
         left: 3.7%;
     }
+
+    .cball1, .cball2, .cball3, .cball4, .cball5, .cball6, .cball7, .cball8{
+        width: 3vw;
+        height: 3vw;
+    }
+
+    .dball1, .dball2, .dball3, .dball4, .dball5, .dball6,
+    .dball7, .dball8, .dball9, .dball10, .dball11, .dball12,
+    .dball13, .dball14, .dball15, .dball16, .dball17{
+        width: 4vw;
+        height: 4vw;
+    }
 }
