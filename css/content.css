@@ -8,12 +8,24 @@ body {
 
 .first{
     width: 100%;
-    height: 25vw;
+    height: 50vw;
     display: flex;
     flex-direction: row;
     justify-content: start;
     align-items: start;
+    flex-wrap: wrap;
 }
+
+.second{
+    width: 100%;
+    height: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
 
 .square{
     width: 25vw;
@@ -82,15 +94,11 @@ body {
     position: absolute;
     margin-top: 16vw;
     margin-left: 4vw;
-    animation: ball2 1s linear infinite;
+    animation: ball1 1s linear infinite;
     animation-direction: alternate-reverse;
     animation-play-state: running;
 }
 
-@keyframes ball2{
-    0%{top: -100%; left: 0%}
-    100%{top: 0%; left: 0%}
-}
 
 .circle2:hover{animation-play-state: paused;}
 
@@ -103,14 +111,9 @@ body {
     position: absolute;
     margin-top: 20vw;
     margin-left: 5vw;
-    animation: ball3 1.5s linear infinite;
+    animation: ball1 1.5s linear infinite;
     animation-direction: alternate-reverse;
     animation-play-state: running;
-}
-
-@keyframes ball3{
-    0%{top: -100%; left: 0%}
-    100%{top: 0%; left: 0%}
 }
 
 .circle3:hover{animation-play-state: paused;}
@@ -123,14 +126,9 @@ body {
     position: absolute;
     margin-top: 15vw;
     margin-left: 8vw;
-    animation: ball4 1.5s linear infinite;
+    animation: ball1 1.5s linear infinite;
     animation-direction: alternate-reverse;
     animation-play-state: running;
-}
-
-@keyframes ball4{
-    0%{top: -100%; left: 0%}
-    100%{top: 0%; left: 0%}  
 }
 
 .circle4:hover{animation-play-state: paused;}
@@ -143,14 +141,9 @@ body {
     position: absolute;
     margin-top: 19.5vw;
     margin-left: 9.5vw;
-    animation: ball5 2s linear infinite;
+    animation: ball1 2s linear infinite;
     animation-direction: alternate-reverse;
     animation-play-state: running;
-}
-
-@keyframes ball5{
-    0%{top: -100%; left: 0%}
-    100%{top: 0%; left: 0%}
 }
 
 .circle5:hover{animation-play-state: paused;}
@@ -163,14 +156,9 @@ body {
     position: absolute;
     margin-top: 17vw;
     margin-left: 12vw;
-    animation: ball6 1s linear infinite;
+    animation: ball1 1s linear infinite;
     animation-direction: alternate-reverse;
     animation-play-state: running;
-}
-
-@keyframes ball6{
-    0%{top: -100%; left: 0%}
-    100%{top: 0%; left: 0%}
 }
 
 .circle6:hover{animation-play-state: paused;}
@@ -183,14 +171,9 @@ body {
     position: absolute;
     margin-top: 20vw;
     margin-left: 14vw;
-    animation: ball7 1.75s linear infinite;
+    animation: ball1 1.75s linear infinite;
     animation-direction: alternate-reverse;
     animation-play-state: running;
-}
-
-@keyframes ball7{
-    0%{top: -100%; left: 0%}
-    100%{top: 0%; left: 0%}
 }
 
 .circle7:hover{animation-play-state: paused;}
@@ -203,14 +186,9 @@ body {
     position: absolute;
     margin-top: 16vw;
     margin-left: 16vw;
-    animation: ball8 1.5s linear infinite;
+    animation: ball1 1.5s linear infinite;
     animation-direction: alternate-reverse;
     animation-play-state: running;
-}
-
-@keyframes ball8{
-    0%{top: -100%; left: 0%}
-    100%{top: 0%; left: 0%}
 }
 
 .circle8:hover{animation-play-state: paused;}
@@ -223,14 +201,9 @@ body {
     position: absolute;
     margin-top: 20.5vw;
     margin-left: 18vw;
-    animation: ball9 2s linear infinite;
+    animation: ball1 2s linear infinite;
     animation-direction: alternate-reverse;
     animation-play-state: running;
-}
-
-@keyframes ball9{
-    0%{top: -100%; left: 0%}
-    100%{top: 0%; left: 0%}
 }
 
 .circle9:hover{animation-play-state: paused;}
@@ -243,14 +216,9 @@ body {
     position: absolute;
     margin-top: 17vw;
     margin-left: 20.5vw;
-    animation: ball10 1.75s linear infinite;
+    animation: ball1 1.75s linear infinite;
     animation-direction: alternate-reverse;
     animation-play-state: running;
-}
-
-@keyframes ball10{
-    0%{top: -100%; left: 0%}
-    100%{top: 0%; left: 0%}
 }
 
 .circle10:hover{animation-play-state: paused;}
@@ -263,14 +231,9 @@ body {
     position: absolute;
     margin-top: 13vw;
     margin-left: 19vw;
-    animation: ball11 1.75s linear infinite;
+    animation: ball1 1.75s linear infinite;
     animation-direction: alternate-reverse;
     animation-play-state: running;
-}
-
-@keyframes ball11{
-    0%{top: -100%; left: 0%}
-    100%{top: 0%; left: 0%}
 }
 
 .circle11:hover{animation-play-state: paused;}
@@ -287,14 +250,9 @@ body {
     position: absolute;
     margin-top: 13vw;
     margin-left: 11.5vw;
-    animation: ball12 1.5s linear infinite;
+    animation: ball1 1.5s linear infinite;
     animation-direction: alternate-reverse;
     animation-play-state: running;
-}
-
-@keyframes ball12{
-    0%{top: -100%; left: 0%}
-    100%{top: 0%; left: 0%}
 }
 
 .anim2:hover{
@@ -718,24 +676,6 @@ body {
     100%{transform: scale(6); opacity: 0}
 }
 
-.second{
-    width: 100%;
-    height: 25vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: start;
-}
-
-.third{
-    width: 100%;
-    height: 25vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: start;
-}
-
 .eye1{
     background-image: url("../img/1eye.png");
     background-size: contain;
@@ -890,29 +830,13 @@ body {
     100%{top: 77%; left: 14%}
 }
 
-/* .imgring1{
-    width: 5vw;
-    height: 5vw;
-} */
-
-/* .ring1{
-    animation: ring1 1.5s linear infinite;
-    animation-direction: alternate-reverse;
-}
-
-@keyframes ring1{
-    0%{transform: translateX(0)}
-    33%{transform: translateX(0)}
-    66%{transform: translateX(0)}
-    100%{transform: translateX(0)}
-} */
-
 .squareanim6{
     width: 25vw;
     height: 25vw;
     display: flex; 
     justify-content: center; 
     align-items: center;
+    overflow: hidden;
 }
 
 .ring1{
@@ -971,15 +895,6 @@ body {
 .ring4img{
     width: 24vw;
     height: 24vw;
-}
-
-.fourth{
-    width: 100%;
-    height: 25vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: start;
 }
 
 .eye3{
@@ -1411,7 +1326,10 @@ body {
     display: flex;
     width: fit-content;
     animation: ticker 10s linear infinite;
+    animation-direction: normal;
 }
+
+.items:hover{animation-direction: reverse;}
         
 .item{
     margin-left: 2vw;
@@ -1427,4 +1345,135 @@ body {
     background-size: 99%;
 }
 
+.player{
+    width: 100%;
+    height: 56.42vw;
+    overflow: hidden;
+    position: relative;
+    transition: ease 0.5s;
+}
 
+.player{
+    background-image: url("../img/emotiondefault.svg");
+    background-size: contain;
+}
+
+.angerswitch{
+    width: 2.2vw;
+    height: 2.2vw;
+    border-radius: 50%;
+    background-color: #FF3E3E;
+    position: absolute;
+    top: 84.7%;
+    left: 5.2%;
+}
+
+.player:has(.angerswitch:hover){
+    background-image: url("../img/emotionanger.svg");
+    background-size: contain;
+}
+
+.sadswitch{
+    width: 2.2vw;
+    height: 2.2vw;
+    border-radius: 50%;
+    background-color: #7C7BC8;
+    position: absolute;
+    top: 72.7%;
+    left: 5.2%;
+}
+
+.player:has(.sadswitch:hover){
+    background-image: url("../img/emotionsadness.svg");
+    background-size: contain;
+}
+
+.fearswitch{
+    width: 2.2vw;
+    height: 2.2vw;
+    border-radius: 50%;
+    background-color: #909747;
+    position: absolute;
+    top: 60.7%;
+    left: 5.2%;
+}
+
+.player:has(.fearswitch:hover){
+    background-image: url("../img/emotionfear.svg");
+    background-size: contain;
+}
+
+.melancholyswitch{
+    width: 2.2vw;
+    height: 2.2vw;
+    border-radius: 50%;
+    background-color: #A9A9A9;
+    position: absolute;
+    top: 48.7%;
+    left: 5.2%;
+}
+
+.player:has(.melancholyswitch:hover){
+    background-image: url("../img/emotionmelancholy.svg");
+    background-size: contain;
+}
+
+.loveswitch{
+    width: 2.2vw;
+    height: 2.2vw;
+    border-radius: 50%;
+    background-color: #FF427A;
+    position: absolute;
+    top: 36.7%;
+    left: 5.2%;
+}
+
+.player:has(.loveswitch:hover){
+    background-image: url("../img/emotionlove.svg");
+    background-size: contain;
+}
+
+.happyswitch{
+    width: 2.2vw;
+    height: 2.2vw;
+    border-radius: 50%;
+    background-color: #FF5C00;
+    position: absolute;
+    top: 24%;
+    left: 5.2%;
+}
+
+.player:has(.happyswitch:hover){
+    background-image: url("../img/emotionhappyness.svg");
+    background-size: contain;
+}
+
+.desireswitch{
+    width: 2.2vw;
+    height: 2.2vw;
+    border-radius: 50%;
+    background-color: #9AF2F2;
+    position: absolute;
+    top: 12%;
+    left: 5.2%;
+}
+
+.player:has(.desireswitch:hover){
+    background-image: url("../img/emotiondesire.svg");
+    background-size: contain;
+}
+
+.activityswitch{
+    width: 2.2vw;
+    height: 2.2vw;
+    border-radius: 50%;
+    background-color: #FFC556;
+    position: absolute;
+    top: 0%;
+    left: 5.2%;
+}
+
+.player:has(.activityswitch:hover){
+    background-image: url("../img/emotionactivity.svg");
+    background-size: contain;
+}
