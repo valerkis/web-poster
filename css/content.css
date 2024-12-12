@@ -52,7 +52,7 @@ body {
 
 .scream:hover{background-image: url("../img/scream2.svg");}
 
-.circle1 {
+.circle1{
     width: 4vw;
     height: 4vw;
     border-radius: 50%;
@@ -63,6 +63,7 @@ body {
     margin-left: 0.3vw;
     animation: ball1 2s linear infinite; 
     animation-direction: alternate-reverse;
+    animation-play-state: running;
 }
 
 @keyframes ball1{
@@ -70,7 +71,9 @@ body {
     100%{top: 0%; left: 0%}
 }
 
-.circle2 {
+.circle1:hover{animation-play-state: paused;}
+
+.circle2{
     width: 4vw;
     height: 4vw;
     border-radius: 50%;
@@ -81,12 +84,15 @@ body {
     margin-left: 4vw;
     animation: ball2 1s linear infinite;
     animation-direction: alternate-reverse;
+    animation-play-state: running;
 }
 
 @keyframes ball2{
     0%{top: -100%; left: 0%}
     100%{top: 0%; left: 0%}
 }
+
+.circle2:hover{animation-play-state: paused;}
 
 .circle3 {
     width: 4vw;
@@ -99,12 +105,15 @@ body {
     margin-left: 5vw;
     animation: ball3 1.5s linear infinite;
     animation-direction: alternate-reverse;
+    animation-play-state: running;
 }
 
 @keyframes ball3{
     0%{top: -100%; left: 0%}
     100%{top: 0%; left: 0%}
 }
+
+.circle3:hover{animation-play-state: paused;}
 
 .circle4 {
     width: 4vw;
@@ -116,12 +125,15 @@ body {
     margin-left: 8vw;
     animation: ball4 1.5s linear infinite;
     animation-direction: alternate-reverse;
+    animation-play-state: running;
 }
 
 @keyframes ball4{
     0%{top: -100%; left: 0%}
     100%{top: 0%; left: 0%}  
 }
+
+.circle4:hover{animation-play-state: paused;}
 
 .circle5 {
     width: 4vw;
@@ -133,12 +145,15 @@ body {
     margin-left: 9.5vw;
     animation: ball5 2s linear infinite;
     animation-direction: alternate-reverse;
+    animation-play-state: running;
 }
 
 @keyframes ball5{
     0%{top: -100%; left: 0%}
     100%{top: 0%; left: 0%}
 }
+
+.circle5:hover{animation-play-state: paused;}
 
 .circle6 {
     width: 4vw;
@@ -150,12 +165,15 @@ body {
     margin-left: 12vw;
     animation: ball6 1s linear infinite;
     animation-direction: alternate-reverse;
+    animation-play-state: running;
 }
 
 @keyframes ball6{
     0%{top: -100%; left: 0%}
     100%{top: 0%; left: 0%}
 }
+
+.circle6:hover{animation-play-state: paused;}
 
 .circle7 {
     width: 4vw;
@@ -167,12 +185,15 @@ body {
     margin-left: 14vw;
     animation: ball7 1.75s linear infinite;
     animation-direction: alternate-reverse;
+    animation-play-state: running;
 }
 
 @keyframes ball7{
     0%{top: -100%; left: 0%}
     100%{top: 0%; left: 0%}
 }
+
+.circle7:hover{animation-play-state: paused;}
 
 .circle8 {
     width: 4vw;
@@ -184,12 +205,15 @@ body {
     margin-left: 16vw;
     animation: ball8 1.5s linear infinite;
     animation-direction: alternate-reverse;
+    animation-play-state: running;
 }
 
 @keyframes ball8{
     0%{top: -100%; left: 0%}
     100%{top: 0%; left: 0%}
 }
+
+.circle8:hover{animation-play-state: paused;}
 
 .circle9 {
     width: 4vw;
@@ -201,12 +225,15 @@ body {
     margin-left: 18vw;
     animation: ball9 2s linear infinite;
     animation-direction: alternate-reverse;
+    animation-play-state: running;
 }
 
 @keyframes ball9{
     0%{top: -100%; left: 0%}
     100%{top: 0%; left: 0%}
 }
+
+.circle9:hover{animation-play-state: paused;}
 
 .circle10 {
     width: 4vw;
@@ -218,6 +245,7 @@ body {
     margin-left: 20.5vw;
     animation: ball10 1.75s linear infinite;
     animation-direction: alternate-reverse;
+    animation-play-state: running;
 }
 
 @keyframes ball10{
@@ -225,7 +253,9 @@ body {
     100%{top: 0%; left: 0%}
 }
 
-.circle11 {
+.circle10:hover{animation-play-state: paused;}
+
+.circle11{
     width: 4vw;
     height: 4vw;
     border-radius: 50%;
@@ -235,12 +265,15 @@ body {
     margin-left: 19vw;
     animation: ball11 1.75s linear infinite;
     animation-direction: alternate-reverse;
+    animation-play-state: running;
 }
 
 @keyframes ball11{
     0%{top: -100%; left: 0%}
     100%{top: 0%; left: 0%}
 }
+
+.circle11:hover{animation-play-state: paused;}
 
 .anim4{
     background-image: url("../img/ellipse.svg");
@@ -256,6 +289,7 @@ body {
     margin-left: 11.5vw;
     animation: ball12 1.5s linear infinite;
     animation-direction: alternate-reverse;
+    animation-play-state: running;
 }
 
 @keyframes ball12{
@@ -523,25 +557,25 @@ body {
     100%{top: 87%; left: 63%}
 }
 
-.circle {
-    width: 2vw;
-    height: 2vw;
+.circle{
+    width: 4vw;
+    height: 4vw;
     border-radius: 50%;
     background-color: #B3B3CF;
     position: absolute;
-    animation: ball 5s linear infinite, changeColor 5s infinite;
+    animation: ball 3s linear infinite, changeColor 5s infinite;
     animation-play-state: running;
 }
 
-    @keyframes ball{
+@keyframes ball{
         0%{top: 50%; left: 2%}
-        30%{top: 6%; left: 25%}
-        50%{top: 6%; left: 65%}
-        70%{top: 80%; left: 75%}
+        30%{top: 4%; left: 25%}
+        50%{top: 6%; left: 60%}
+        70%{top: 75%; left: 66%}
         100%{top: 50%; left: 2%}
     }
 
-    @keyframes changeColor {
+@keyframes changeColor {
         0% {background-color:  #B3B3CF;}
         30% {background-color:  #FFAA91;}
         50% {background-color:  #D7F5E1;}
@@ -549,13 +583,12 @@ body {
         100% {background-color: #C5C7B1;}
       }
 
-      .circle:hover{animation-play-state: paused;}
+.circle:hover{animation-play-state: paused;}
 
 .anim3{
     background-image: url("../img/anim3.svg");
     background-size: 99%;
 }
-
 
 .bball1{
     width: 1.9vw;
@@ -570,7 +603,7 @@ body {
 
 @keyframes bball1{
     0%{transform: scale(1)}
-    100%{transform: scale(20)}
+    100%{transform: scale(20); opacity: 0}
 }
 
 .bball2{
@@ -586,7 +619,7 @@ body {
 
 @keyframes bball2{
     0%{transform: scale(1)}
-    100%{transform: scale(18)}
+    100%{transform: scale(18); opacity: 0}
 }
 
 .bball3{
@@ -602,7 +635,7 @@ body {
 
 @keyframes bball3{
     0%{transform: scale(1)}
-    100%{transform: scale(16)}
+    100%{transform: scale(16); opacity: 0}
 }
 
 .bball4{
@@ -618,7 +651,7 @@ body {
 
 @keyframes bball4{
     0%{transform: scale(1)}
-    100%{transform: scale(14)}
+    100%{transform: scale(14); opacity: 0}
 }
 
 .bball5{
@@ -634,7 +667,7 @@ body {
 
 @keyframes bball5{
     0%{transform: scale(1)}
-    100%{transform: scale(12)}
+    100%{transform: scale(12); opacity: 0}
 }
 
 .bball6{
@@ -650,7 +683,7 @@ body {
 
 @keyframes bball6{
     0%{transform: scale(1)}
-    100%{transform: scale(10)}
+    100%{transform: scale(10); opacity: 0}
 }
 
 .bball7{
@@ -666,7 +699,7 @@ body {
 
 @keyframes bball7{
     0%{transform: scale(1)}
-    100%{transform: scale(8)}
+    100%{transform: scale(8); opacity: 0}
 }
 
 .bball8{
@@ -682,7 +715,7 @@ body {
 
 @keyframes bball8{
     0%{transform: scale(1)}
-    100%{transform: scale(6)}
+    100%{transform: scale(6); opacity: 0}
 }
 
 .second{
@@ -692,6 +725,674 @@ body {
     flex-direction: row;
     justify-content: start;
     align-items: start;
+}
+
+.third{
+    width: 100%;
+    height: 25vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+}
+
+.eye1{
+    background-image: url("../img/1eye.png");
+    background-size: contain;
+}
+
+.eye1:hover{background-image: url("../img/1eye2.svg");}
+
+.eye2{
+    background-image: url("../img/2eye.svg");
+    background-size: contain;
+}
+
+.eye2:hover{background-image: url("../img/2eye2.svg");}
+
+.anim5{
+    background-image: url("../img/anim5.svg");
+    background-size: 99%;
+}
+
+.cball1{
+    width: 1.6vw;
+    height: 1.6vw;
+    border-radius: 50%;
+    border: 0.1vw solid white;
+    background-color: #7C7BC8;
+    position: absolute;
+    animation: cball1 2.2s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes cball1{
+    0%{top: 46%; left: 1%}
+    100%{top: 46%; left: 37%}
+}
+
+.cball2{
+    width: 1.6vw;
+    height: 1.6vw;
+    border-radius: 50%;
+    border: 0.1vw solid white;
+    background-color: #FF5C00;
+    position: absolute;
+    animation: cball2 1s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes cball2{
+    0%{top: 46%; left: 90%}
+    100%{top: 46%; left: 55%}
+}
+
+.cball3{
+    width: 1.6vw;
+    height: 1.6vw;
+    border-radius: 50%;
+    border: 0.1vw solid white;
+    background-color: #A9A9A9;
+    position: absolute;
+    animation: cball3 2.5s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes cball3{
+    0%{top: 90%; left: 46%}
+    100%{top: 56%; left: 46%}
+}
+
+.cball4{
+    width: 1.6vw;
+    height: 1.6vw;
+    border-radius: 50%;
+    border: 0.1vw solid white;
+    background-color: #FFC556;
+    position: absolute;
+    animation: cball4 2s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes cball4{
+    0%{top: 27%; left: 57%}
+    50%{top: 35%; left: 46%}
+    100%{top: 1%; left: 46%}
+}
+
+.cball5{
+    width: 1.6vw;
+    height: 1.6vw;
+    border-radius: 50%;
+    border: 0.1vw solid white;
+    background-color: #FF427A;
+    position: absolute;
+    animation: cball5 3s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes cball5{
+    0%{top: 63%; left: 74%}
+    50%{top: 53%; left: 54%}
+    100%{top: 77%; left: 78%}
+}
+
+.cball6{
+    width: 1.6vw;
+    height: 1.6vw;
+    border-radius: 50%;
+    border: 0.1vw solid white;
+    background-color: #FF3E3E;
+    position: absolute;
+    animation: cball6 3s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes cball6{
+    0%{top: 39%; left: 28%}
+    25%{top: 38%; left: 38%}
+    50%{top: 14%; left: 14%}
+    75%{top: 38%; left: 38%}
+    100%{top: 15%; left: 29%}
+}
+
+.cball7{
+    width: 1.6vw;
+    height: 1.6vw;
+    border-radius: 50%;
+    border: 0.1vw solid white;
+    background-color: #9AF2F2;
+    position: absolute;
+    animation: cball7 1.5s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes cball7{
+    0%{top: 14%; left: 78%}
+    50%{top: 38%; left: 54%}
+    100%{top: 42%; left: 68%}
+}
+
+.cball8{
+    width: 1.6vw;
+    height: 1.6vw;
+    border-radius: 50%;
+    border: 0.1vw solid white;
+    background-color: #909747;
+    position: absolute;
+    animation: cball8 1.5s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes cball8{
+    0%{top: 74%; left: 29%}
+    50%{top: 53%; left: 38%}
+    100%{top: 77%; left: 14%}
+}
+
+/* .imgring1{
+    width: 5vw;
+    height: 5vw;
+} */
+
+/* .ring1{
+    animation: ring1 1.5s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes ring1{
+    0%{transform: translateX(0)}
+    33%{transform: translateX(0)}
+    66%{transform: translateX(0)}
+    100%{transform: translateX(0)}
+} */
+
+.squareanim6{
+    width: 25vw;
+    height: 25vw;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.ring1{
+    position: absolute;
+    margin: auto;
+    animation: anim6 2.5s linear infinite;
+    overflow: hidden;
+    animation-direction: normal;
+    z-index: 1;
+}
+
+.ring1:hover{animation-direction: reverse;}
+
+.ring1img{
+    width: 7vw;
+    height: 7vw;
+}
+
+@keyframes anim6{
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+}
+
+.ring2{
+    position: absolute;
+    margin: auto;
+    animation: anim6 4s linear infinite;
+    overflow: hidden;
+}
+
+.ring2img{
+    width: 12vw;
+    height: 12vw;
+}
+
+.ring3{
+    position: absolute;
+    margin: auto;
+    animation: anim6 6s linear infinite;
+    overflow: hidden;
+}
+
+.ring3img{
+    width: 18vw;
+    height: 18vw;
+}
+
+.ring4{
+    position: absolute;
+    margin: auto;
+    animation: anim6 9s linear infinite;
+    overflow: hidden;
+}
+
+
+.ring4img{
+    width: 24vw;
+    height: 24vw;
+}
+
+.fourth{
+    width: 100%;
+    height: 25vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+}
+
+.eye3{
+    background-image: url("../img/3eye.svg");
+    background-size: contain;
+}
+
+.eye3:hover{background-image: url("../img/3eye2.svg");}
+
+.eye4{
+    background-image: url("../img/4eye.svg");
+    background-size: contain;
+}
+
+.eye4:hover{background-image: url("../img/4eye2.svg");}
+
+.anim7{
+    background-image: url("../img/anim7.svg");
+    background-size: 99%;
+}
+
+.dball1{
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    background-color: #FFC556;
+    position: absolute;
+    animation: dball1 2s ease-in-out infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes dball1{
+    0%{top: 3%; left: 89%}
+    100%{top: 3%; left: -10%}
+}
+
+.dball2{
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    background-color: #9AF2F2;
+    position: absolute;
+    animation: dball2 2s ease-in-out infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes dball2{
+    0%{top: 3%; left: 77%}
+    100%{top: 3%; left: -10%}
+}
+
+.dball3{
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    background-color: #FF5C00;
+    position: absolute;
+    animation: dball3 2s ease-in-out infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes dball3{
+    0%{top: 3%; left: 65%}
+    100%{top: 3%; left: -10%}
+}
+
+.dball4{
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    background-color: #FF427A;
+    position: absolute;
+    animation: dball4 2s ease-in-out infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes dball4{
+    0%{top: 3%; left: 52%}
+    100%{top: 3%; left: -10%}
+}
+
+.dball5{
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    background-color: #A9A9A9;
+    position: absolute;
+    animation: dball5 2s ease-in-out infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes dball5{
+    0%{top: 3%; left: 39%}
+    100%{top: 3%; left: -10%}
+}
+
+.dball6{
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    background-color: #909747;
+    position: absolute;
+    animation: dball6 2s ease-in-out infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes dball6{
+    0%{top: 3%; left: 27%}
+    100%{top: 3%; left: -10%}
+}
+
+.dball7{
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    background-color: #7C7BC8;
+    position: absolute;
+    animation: dball7 2s ease-in-out infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes dball7{
+    0%{top: 3%; left: 14%}
+    100%{top: 3%; left: -10%}
+}
+
+.dball8{
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    background-color: #FF3E3E;
+    position: absolute;
+    animation: dball8 2s ease-in-out infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes dball8{
+    0%{top: 3%; left: 2%}
+    100%{top: 3%; left: -10%}
+}
+
+
+.dball9{
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    background-color: #DAC3A1;
+    position: absolute;
+    animation: dball9 2s ease-in-out infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes dball9{
+    0%{top: 31%; left: 43%}
+    100%{top: 31%; left: 110%}
+}
+
+.dball10{
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    background-color: #D4EDCB;
+    position: absolute;
+    animation: dball10 2s ease-in-out infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes dball10{
+    0%{top: 31%; left: 58%}
+    100%{top: 31%; left: 110%}
+}
+
+.dball11{
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    background-color: #D85E76;
+    position: absolute;
+    animation: dball11 2s ease-in-out infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes dball11{
+    0%{top: 31%; left: 87%}
+    100%{top: 31%; left: 110%}
+}
+
+.dball12{
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    background-color: #FF8C72;
+    position: absolute;
+    animation: dball12 2s ease-in-out infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes dball12{
+    0%{top: 60%; left: 3%}
+    100%{top: 60%; left: -10%}
+}
+
+.dball13{
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    background-color: #B3B694;
+    position: absolute;
+    animation: dball13 2s ease-in-out infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes dball13{
+    0%{top: 60%; left: 29%}
+    100%{top: 60%; left: -10%}
+}
+
+.dball14{
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    background-color: #FF7874;
+    position: absolute;
+    animation: dball14 2s ease-in-out infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes dball14{
+    0%{top: 60%; left: 62%}
+    100%{top: 60%; left: -10%}
+}
+
+.dball15{
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    background-color: #D4A0B9;
+    position: absolute;
+    animation: dball15 2s ease-in-out infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes dball15{
+    0%{top: 88%; left: 18%}
+    100%{top: 88%; left: 110%}
+}
+
+.dball16{
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    background-color: #EBA6BB;
+    position: absolute;
+    animation: dball16 2s ease-in-out infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes dball16{
+    0%{top: 88%; left: 51%}
+    100%{top: 88%; left: 110%}
+}
+
+.dball17{
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    background-color: #DDD7C1;
+    position: absolute;
+    animation: dball17 2s ease-in-out infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes dball17{
+    0%{top: 88%; left: 75%}
+    100%{top: 88%; left: 110%}
+}
+
+.eball1{
+    width: 6vw;
+    height: 6vw;
+    border-radius: 50%;
+    background-color: #FF3E3E;
+    filter: blur(1.3vw);
+    position: absolute;
+    animation: eball11 10s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes eball11{
+    0%{top: 8%; left: 8%}
+    50%{top: 20%; left: 80%}
+    100%{top: 88%; left: 20%}
+}
+
+.eball2{
+    width: 6vw;
+    height: 6vw;
+    border-radius: 50%;
+    background-color: #7C7BC8;
+    filter: blur(1.3vw);
+    position: absolute;
+    animation: eball12 10s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes eball12{
+    0%{top: 88%; left: 50%}
+    50%{top: 20%; left: 80%}
+    100%{top: 8%; left: 2%}
+}
+
+.eball3{
+    width: 6vw;
+    height: 6vw;
+    border-radius: 50%;
+    background-color: #909747;
+    filter: blur(1.3vw);
+    position: absolute;
+    animation: eball13 10s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes eball13{
+    0%{top: 20%; left: 5%}
+    50%{top: 80%; left: 30%}
+    100%{top: 40%; left: 2%}
+}
+
+.eball4{
+    width: 6vw;
+    height: 6vw;
+    border-radius: 50%;
+    background-color: #9AF2F2;
+    filter: blur(1.3vw);
+    position: absolute;
+    animation: eball14 10s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes eball14{
+    0%{top: 60%; left: 5%}
+    50%{top: 10%; left: 80%}
+    100%{top: 40%; left: 70%}
+}
+
+.eball5{
+    width: 6vw;
+    height: 6vw;
+    border-radius: 50%;
+    background-color: #FFC556;
+    filter: blur(1.3vw);
+    position: absolute;
+    animation: eball15 10s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes eball15{
+    0%{top: 10%; left: 10%}
+    50%{top: 60%; left: 10%}
+    100%{top: 90%; left: 30%}
+}
+
+
+.eball6{
+    width: 6vw;
+    height: 6vw;
+    border-radius: 50%;
+    background-color: #FF5C00;
+    filter: blur(1.3vw);
+    position: absolute;
+    animation: eball16 10s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes eball16{
+    0%{top: 10%; left: 80%}
+    50%{top: 70%; left: 10%}
+    100%{top: 90%; left: 60%}
+}
+
+.eball7{
+    width: 6vw;
+    height: 6vw;
+    border-radius: 50%;
+    background-color: #FF427A;
+    filter: blur(1.3vw);
+    position: absolute;
+    animation: eball17 10s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes eball17{
+    0%{top: 80%; left: 80%}
+    50%{top: 20%; left: 10%}
+    100%{top: 40%; left: 10%}
+}
+
+
+.eball8{
+    width: 6vw;
+    height: 6vw;
+    border-radius: 50%;
+    background-color: #A9A9A9;
+    filter: blur(1.3vw);
+    position: absolute;
+    animation: eball18 10s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes eball18{
+    0%{top: 50%; left: 10%}
+    50%{top: 70%; left: 90%}
+    100%{top: 40%; left: 90%}
 }
 
   .running{
@@ -716,7 +1417,7 @@ body {
     margin-left: 2vw;
 }
 
-@keyframes ticker {
+@keyframes ticker{
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
   }
