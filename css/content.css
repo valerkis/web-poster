@@ -1346,7 +1346,7 @@ body {
 }
 
 .player{
-    width: 100%;
+    width: 100vw;
     height: 56vw;
     overflow: hidden;
     position: relative;
